@@ -1,0 +1,31 @@
+To-Do List and Notes
+
+Notes from October. 14th
+- Website should be formatted nicely and design language should be consistent. Reference Bloomberg News, Bell Labs, etc. Avoid default AI aesthetic/layout
+- Teams of 3: 1 team member can find data on real polls (i.e. Cross Tabs data, Washington Post, etc). Another team member can get real data for post-stratification (CES). Another team member can do write-up, simulations, etc. Democrats = blue and Republicans = Red.
+- Other important components are detailed in the rubric: API Costs, Methods, Discussion, internal validation (i.e. tell models about a persona from Vermont and ensure they can correctly return the state), source (link to GitHub repo), contact information, etc.
+- AI statement does not need full chat logs
+- Make use of caching
+-GitHub Actions part of rubric is "icing on the cake"-nice to have
+- Error from Donaldson--lack of reproducibility. Ensure all output names, etc., are consistent.
+- Stratified sampling will be used in API call for US
+
+CROSSTABS AND CES DATA
+- cross tabulations are detailed tables that break down topline survey results by specific subgroups (age, gender, race, location, etc.). We need crosstabs to compare our silicon samples/synthetic votes to real data to ensure that the votes follow a realistic distribution. We want to avoid mode collapse. Using SSR will probably help with this. LLMs have real limitations (i.e. certain models will tend to vote Republican, Democrat, or underestimate the number of people who abstain or refuse to vote)
+
+CES DATA
+- These will be used for post-stratification--if AI simulated 20% rural voters but about 35% make up midterm elec in that state then post stratification can scale up the value of those responses.
+
+
+Notes from October 7th
+- Adding Party ID and ideology seems to be most important for personas
+- Decide what news sources we will reference to close the gap between synthetic samples 
+- Try simulating personas without using news as a baseline
+- We need to find a way to deal with unclear responses - will be throw it away, resample, or make an Other category? However, throwing away or dropping refusals may be problematic as we can't use weights to scale things up with CES due to response bias
+- Can run variations. Paper ran each configuration once 
+- Richer personas don't seem to matter from paper
+- Models will struggle with atypical people like foreign expats, permanent residents, etc.
+- There is a gap between silicon samples and real people--real people tend to vote at higher rates
+- Groups like Republicans and Black people have largest errors between siilicon sample answers and real answers--be aware
+- Be aware of mode collapse and how to deal with it by building our own distribution. SSR can help with improvement and recovers variance and tail behaviour or real survey responses..?
+- We need to create anchors (reference) for which persona responses can be plotted on and quantified. Semantic mapping--> persona responses are mapped into a embedded space. How many anchors do we need? Take the distance between anchors and get the distance scores. Sample from that distribution to get a number.
