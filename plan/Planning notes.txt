@@ -16,6 +16,10 @@ Notes from October. 14th
 From SSR paper
 - Semantic similarity rating can help correct for variance (mode collapse) but not great at correcting bias--LLMs tend to give more extreme responses, fundamental issue with the LLMs and how they understand politics + psychology. Should be accounted for...
 
+Another paper: https://arxiv.org/pdf/2402.18144
+Random Silicon Sampling: Simulating Human Sub-Population Opinion Using a Large
+Language Model Based on Group-Level Demographic Information
+
 CROSSTABS AND CES DATA
 - cross tabulations are detailed tables that break down topline survey results by specific subgroups (age, gender, race, location, etc.). We need crosstabs to compare our silicon samples/synthetic votes to real data to ensure that the votes follow a realistic distribution. We want to avoid mode collapse. Using SSR will probably help with this. LLMs have real limitations (i.e. certain models will tend to vote Republican, Democrat, or underestimate the number of people who abstain or refuse to vote)
 
