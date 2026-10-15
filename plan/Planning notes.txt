@@ -37,6 +37,7 @@ Washington Post Crosstab? https://crosstab.vote/pollsters/washington-post-sspg/
 2. Once research is done, start defining what anchors will be used? Can reference SSR paper for that. Start defining what categories will be included when persona profiles (i.e. gender-male/female/other, education-highschool/bachelors, etc.)
 3. Create an equal number of personas for every single possible demographic? (i.e. 10 for every combo of age group x race x gender x education x geography) then reweight them later (?) with poststrat
 4. Will generate x number of personas from each subgroup. 
+4a. Will have to update and add news summaries, though not sure yet when exactly this will happen.
 5. Send these personas in batches to an AI model (or several AI models-let's say 3) and ask each one how they would vote in the election. They should return a text output (qualitative answer). Each persona will thus have 3 answers, 1 from each AI model.
 6. Qualitative answers/text will be semantically mapped and will end up getting likelihood of voting for A vs. B (i.e. 56% A, 44% B).
 7. If there are 1000 personas total, then will have 3000 votes (1000 from each AI model). Will have to postratify, apply weights, then compare to the crosstabs data distributions? Compare model's weighted final distribution against historical crosstabs data?? Will also have to correct for bias somehow
