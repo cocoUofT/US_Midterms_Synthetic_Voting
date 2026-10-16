@@ -4,6 +4,13 @@ To-Do List and Notes
 - Will be using Python
 
 Notes and Questions from meeting October.16th
+- TODO over the weekend: Download and look at datasets
+	- Crosstab data: look at Washinton Post + ANES --> decide on one tonight
+	- Poststrat: Census data (most recent census)
+- Read/skim papers
+- Sunday - meet up (ZOOM) 10 AM -- use that meeting to plan next week's workload
+- Try to have draft of code pipeline done for Friday
+
 - Will do Senate race -- 33 seats up for election
 - For polling crosstab data -- ANES for now -- for crosstab data, we want to clean data and have cells of different demographics (race x education x age x region x gender) -- different levels for each (how many races are there, how many education levels there are, etc.) --> plot distribution of voting democrat (?) across different levels
  - For postrat - CES (census bureau) -- calculate weights, find the true proportion of that demographic cell in the state's actual electorate
