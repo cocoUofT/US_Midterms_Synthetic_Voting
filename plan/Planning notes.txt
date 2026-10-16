@@ -3,6 +3,19 @@ To-Do List and Notes
 - Senate seems to have the most polling data?? Number of races will depend on number of seats up for election. 36 gubernatorial races, all 435 house seats. 
 - Will be using Python
 
+Notes and Questions from meeting October.16th
+- TODO over the weekend: Download and look at datasets
+	- Crosstab data: look at Washinton Post + ANES --> decide on one tonight
+	- Poststrat: Census data (most recent census)
+- Read/skim papers
+- Sunday - meet up (ZOOM) 10 AM -- use that meeting to plan next week's workload
+- Try to have draft of code pipeline done for Friday
+
+- Will do Senate race -- 33 seats up for election
+- For polling crosstab data -- ANES for now -- for crosstab data, we want to clean data and have cells of different demographics (race x education x age x region x gender) -- different levels for each (how many races are there, how many education levels there are, etc.) --> plot distribution of voting democrat (?) across different levels
+ - For postrat - CES (census bureau) -- calculate weights, find the true proportion of that demographic cell in the state's actual electorate
+- 33 seats up for election, does that mean we need 33 forecasted results? --> and then summarize those results into 1 nice plot.
+
 Notes from October. 14th
 - Website should be formatted nicely and design language should be consistent. Reference Bloomberg News, Bell Labs, etc. Avoid default AI aesthetic/layout
 - Teams of 3: 1 team member can find data on real polls (i.e. Cross Tabs data, Washington Post, etc). Another team member can get data for post-stratification (CES). Another team member can do write-up, simulations, etc. Democrats = blue and Republicans = Red.
