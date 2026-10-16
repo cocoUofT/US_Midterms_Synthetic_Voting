@@ -57,3 +57,6 @@ Notes from October 7th
 - Be aware of mode collapse and how to deal with it by building our own distribution. SSR can help recover variance, recover tail behaviour 
 - We need to create anchors (reference) for which persona responses can be quantified. Semantic mapping--> persona responses are mapped into an embedded space. How many anchors do we need? Take the distance between anchors and get the distance scores. Sample from that distribution to get a number, from SSR paper.
 - I believe one things that was recommended was testing on a free model on a smaller scale, then scaling up to paid model?
+
+
+- we need to send recent news to the llms, maybe using Github Action?
